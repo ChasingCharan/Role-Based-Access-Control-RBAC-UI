@@ -31,7 +31,15 @@ This project implements a Role-Based Access Control (RBAC) system using Django. 
 
 ### 1. Clone the Repository
 ```bash
+git clone https://github.com/ChasingCharan/Role-Based-Access-Control-RBAC-UI.git
 cd RBAC_Project
 
-# For Running project
+# Install Dependencies
+pip install -r requirements.txt
+
+# Apply Migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# Run the Development Server
 python manage.py runserver
